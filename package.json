@@ -1,30 +1,30 @@
 {
   "name": "mbliberator",
-  "version": "0.4.3",
-  "description": "liberate your mbtiles",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "bin": "./mbliberator",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/calvinmetcalf/mbliberator.git"
-  },
-  "keywords": [
-    "mbtiles"
-  ],
-  "author": "Calvin Metcalf",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/calvinmetcalf/mbliberator/issues"
-  },
-  "homepage": "https://github.com/calvinmetcalf/mbliberator",
-  "dependencies": {
-    "commander": "~2.1.0",
-    "mbtiles": "^0.8.0",
-    "mkdirp": "~0.3.5",
-    "through2": "^0.4.1",
-    "tilelivestreams": "~1.1.0"
-  }
+    "version": "0.4.3",
+    "description": "liberate your mbtiles",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "bin": "./mbliberator",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/calvinmetcalf/mbliberator.git"
+    },
+    "keywords": [
+      "mbtiles"
+    ],
+    "author": "Calvin Metcalf",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/calvinmetcalf/mbliberator/issues"
+    },
+    "homepage": "https://github.com/calvinmetcalf/mbliberator",
+    "dependencies": {
+      "@mapbox/mbtiles": "^0.12.1",
+      "commander": "~2.1.0",
+      "tilelivestreams": "~1.1.0",
+      "mkdirp": "~0.3.5",
+      "through2": "^0.4.1"
+    }
 }

@@ -6,22 +6,11 @@ var package = require('./package.json');
 
 program.version(package.version)
   .usage('[options] mbtiles outpath')
-  .option('-m, --mbutil [callback]',[
-    'mbutil mode, also used to set',
-    'the grid callback for mbutil mode,',
-    'if omited defaults to "grid",',
-    'set to "" to turn jsonp off'].join('\n\t\t\t     '))
   .parse(process.argv);
 if (program.args.length < 2) {
   program.help();
 }
-if (program.mbutil === true) {
-  program.mbutil = 'grid';
-}
-if (program.mbutil === 'false') {
-  program.mbutil = false;
-}
-mblib(program.args[0], program.args[1], program.mbutil, function (err, resp) {
+mblib(program.args[0], program.args[1], function (err, resp) {
   if (err) {
     console.error(err);
     process.exit(1);
